@@ -5,9 +5,18 @@
 - [x] Js（Html5/JavaScript）
 - [x] Cpp（HxCpp）
 - [x] ActionScript3 (AdobeAIR)
+- [x] ActionScript3 (HarmanAIR)
 
 ## 依赖库
 当编译到cpp和as3时，需要使用`colyseus-websocket`库。
+
+要使用AIR51原生的WebSocket时，需要使用[`tobil4sk/air`](https://github.com/tobil4sk/air)库，并自行rebuild需要的AIR版本。
+
+```sh
+haxelib git air git@github.com:tobil4sk/air.git
+export AIR_SDK=/path/to/air/sdk
+haxelib run air rebuild
+```
 
 ## 初始化服务器
 ```haxe

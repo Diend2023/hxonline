@@ -2,6 +2,10 @@
 --class-path src
 --class-path main
 --library colyseus-websocket
+# 添加air51支持
+# --library air
+# -D air51
+# -swf-version 40
 -swf-version 11
 --no-traces
 --main Main
